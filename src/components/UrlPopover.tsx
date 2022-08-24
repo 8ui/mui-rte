@@ -98,16 +98,16 @@ const UrlPopover: FunctionComponent<IUrlPopoverStateProps> = (props) => {
                             <>
                                 <Grid item xs={12}>
                                     <ButtonGroup fullWidth>
-                                        <Button 
-                                            color={(!data.type || data.type === "image") ? "primary" : "inherit"} 
-                                            size="small" 
+                                        <Button
+                                            color={(!data.type || data.type === "image") ? "primary" : "inherit"}
+                                            size="small"
                                             onClick={() => setData({...data, type: "image"})}
                                         >
                                             <InsertPhotoIcon />
                                         </Button>
-                                        <Button 
-                                            color={data.type === "video" ? "primary" : "inherit"} 
-                                            size="small" 
+                                        <Button
+                                            color={data.type === "video" ? "primary" : "inherit"}
+                                            size="small"
                                             onClick={() => setData({...data, type: "video"})}
                                         >
                                             <MovieIcon />
@@ -118,7 +118,7 @@ const UrlPopover: FunctionComponent<IUrlPopoverStateProps> = (props) => {
                                     <TextField
                                         onChange={(event) => onSizeChange(event.target.value, "width")}
                                         value={data.width || ""}
-                                        label="Width"
+                                        label="Ширина"
                                         InputLabelProps={{
                                             shrink: true
                                         }}
@@ -128,7 +128,7 @@ const UrlPopover: FunctionComponent<IUrlPopoverStateProps> = (props) => {
                                     <TextField
                                         onChange={(event) => onSizeChange(event.target.value, "height")}
                                         value={data.height || ""}
-                                        label="Height"
+                                        label="Высота"
                                         InputLabelProps={{
                                             shrink: true
                                         }}
@@ -136,23 +136,23 @@ const UrlPopover: FunctionComponent<IUrlPopoverStateProps> = (props) => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <ButtonGroup fullWidth>
-                                        <Button 
-                                            color={data.alignment === "left" ? "primary" : "inherit"} 
-                                            size="small" 
+                                        <Button
+                                            color={data.alignment === "left" ? "primary" : "inherit"}
+                                            size="small"
                                             onClick={() => setData({...data, alignment: "left"})}
                                         >
                                             <FormatAlignLeft />
                                         </Button>
-                                        <Button 
-                                            color={data.alignment === "center" ? "primary" : "inherit"} 
-                                            size="small" 
+                                        <Button
+                                            color={data.alignment === "center" ? "primary" : "inherit"}
+                                            size="small"
                                             onClick={() => setData({...data, alignment: "center"})}
                                         >
                                             <FormatAlignCenter />
                                         </Button>
-                                        <Button 
-                                            color={data.alignment === "right" ? "primary" : "inherit"} 
-                                            size="small" 
+                                        <Button
+                                            color={data.alignment === "right" ? "primary" : "inherit"}
+                                            size="small"
                                             onClick={() => setData({...data, alignment: "right"})}>
                                             <FormatAlignRight />
                                         </Button>
